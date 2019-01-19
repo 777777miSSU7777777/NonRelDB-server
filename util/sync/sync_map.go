@@ -9,7 +9,7 @@ import (
 
 // Map map synchronized with mutex.
 type Map struct {
-	sync.Mutex
+	sync.RWMutex
 	storage *map[string]string
 }
 
